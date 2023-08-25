@@ -51,6 +51,7 @@ public class OrderServiceImpl implements OrderService {
                 if (isOrderDetailAdded) {
                     boolean isItemUpdated = true;
                     boolean isQtyExceeding = false;
+                    
 
                     for (OrderDetailDto detailDto : dto.getDetailDtos()) {
                         ItemEntity entity = itemDao.get(detailDto.getItemCode());
@@ -67,7 +68,7 @@ public class OrderServiceImpl implements OrderService {
 
                     if (isItemUpdated) {
                         connection.commit();
-                        return "Success";
+                        return "Order Placed Successfully!";
                     } else if (isQtyExceeding) {
                         connection.rollback();
                         return "Quantity Exceeds";
@@ -93,5 +94,6 @@ public class OrderServiceImpl implements OrderService {
             connection.setAutoCommit(true);
         }
     }
+
 
 }
