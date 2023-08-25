@@ -34,6 +34,7 @@ public class layoutView extends javax.swing.JFrame {
         itemButton = new javax.swing.JButton();
         orderButton = new javax.swing.JButton();
         bodyPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -113,15 +114,20 @@ public class layoutView extends javax.swing.JFrame {
                 .addContainerGap(209, Short.MAX_VALUE))
         );
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Thenuk De Silva\\Pictures\\f6dbeb17951cb9d12c450eb26e42e484.jpg")); // NOI18N
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout bodyPanelLayout = new javax.swing.GroupLayout(bodyPanel);
         bodyPanel.setLayout(bodyPanelLayout);
         bodyPanelLayout.setHorizontalGroup(
             bodyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 646, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 640, Short.MAX_VALUE)
         );
         bodyPanelLayout.setVerticalGroup(
             bodyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(bodyPanelLayout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout basePanelLayout = new javax.swing.GroupLayout(basePanel);
@@ -184,6 +190,7 @@ public class layoutView extends javax.swing.JFrame {
     private javax.swing.JLabel headerLabel;
     private javax.swing.JPanel headerPanel;
     private javax.swing.JButton itemButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JButton manageCustomerButton;
     private javax.swing.JPanel navigationPanel;
     private javax.swing.JButton orderButton;

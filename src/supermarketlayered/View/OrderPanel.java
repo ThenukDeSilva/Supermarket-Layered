@@ -77,8 +77,6 @@ public class OrderPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         itemTable = new javax.swing.JTable();
         placeOrderButton = new javax.swing.JButton();
-        TotalLabel = new javax.swing.JLabel();
-        TotalDataLabel = new javax.swing.JLabel();
 
         headerlabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         headerlabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -260,11 +258,6 @@ public class OrderPanel extends javax.swing.JPanel {
             }
         });
 
-        TotalLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        TotalLabel.setText("Total");
-
-        TotalDataLabel.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-
         javax.swing.GroupLayout basePanelLayout = new javax.swing.GroupLayout(basePanel);
         basePanel.setLayout(basePanelLayout);
         basePanelLayout.setHorizontalGroup(
@@ -275,12 +268,9 @@ public class OrderPanel extends javax.swing.JPanel {
                 .addGroup(basePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(formPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(basePanelLayout.createSequentialGroup()
-                        .addGroup(basePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(basePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(basePanelLayout.createSequentialGroup()
-                                .addComponent(TotalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TotalDataLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGap(102, 102, 102)
                                 .addComponent(placeOrderButton))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 626, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -295,15 +285,8 @@ public class OrderPanel extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(basePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(basePanelLayout.createSequentialGroup()
-                        .addGroup(basePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(placeOrderButton)
-                            .addComponent(TotalLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
-                    .addGroup(basePanelLayout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(TotalDataLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addComponent(placeOrderButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -340,8 +323,6 @@ public class OrderPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel TotalDataLabel;
-    private javax.swing.JLabel TotalLabel;
     private javax.swing.JButton addItemButton;
     private javax.swing.JPanel basePanel;
     private javax.swing.JLabel custDataLabel;
